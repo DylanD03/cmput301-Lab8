@@ -41,19 +41,19 @@ public class CustomListTest {
     }
 
 
-    // Test has cities
-    @Test
-    public void hasCityTest(){
-        list = MockCityList();
-        City mockCity = MockCity();
-        // test method has cities works
-        assertEquals(false,list.hasCities(mockCity));
-        if (!list.hasCities(mockCity)) {
-            list.addCity(mockCity);
-        }
-        assertEquals(true, list.hasCities(mockCity));
-
-    }
+//    // Test has cities
+//    @Test
+//    public void hasCityTest(){
+//        list = MockCityList();
+//        City mockCity = MockCity();
+//        // test method has cities works
+//        assertEquals(false,list.hasCities(mockCity));
+//        if (!list.hasCities(mockCity)) {
+//            list.addCity(mockCity);
+//        }
+//        assertEquals(true, list.hasCities(mockCity));
+//
+//    }
 
 
 

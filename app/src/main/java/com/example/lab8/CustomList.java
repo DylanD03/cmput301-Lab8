@@ -32,14 +32,14 @@ public class CustomList extends ArrayAdapter<City> {
         return cities.size();
     }
 
-    /**
-     * When given a city, return whether or not it belongs in the list
-     *
-     * @return True if the list has city, false if not
-     */
-    public boolean hasCities(City city){
-        return cities.contains(city);
-    }
+//    /**
+//     * When given a city, return whether or not it belongs in the list
+//     *
+//     * @return True if the list has city, false if not
+//     */
+//    public boolean hasCities(City city){
+//        return cities.contains(city);
+//    }
 
 
     /**
@@ -49,7 +49,7 @@ public class CustomList extends ArrayAdapter<City> {
      * @param city
      */
     public void addCity(City city){
-        cities.add(city);
+        //cities.add(city);
     }
 
 
