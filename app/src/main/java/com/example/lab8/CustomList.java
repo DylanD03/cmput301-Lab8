@@ -23,6 +23,26 @@ public class CustomList extends ArrayAdapter<City> {
         this.context = context;
     }
 
+
+    /**
+     * this gets size of the list
+     * @return the size of the list
+     */
+    public int getCount(){
+        return cities.size();
+    }
+
+
+    /**
+     * this adds a city object to the list
+     * for the first phase it will be
+     * empty
+     * @param city
+     */
+    public void addCity(City city){
+    }
+
+
     @NonNull
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
@@ -42,14 +62,6 @@ public class CustomList extends ArrayAdapter<City> {
         provinceName.setText(city.getProvinceName());
 
         return view;
-
-    }
-
-    public int getCount(){
-        return cities.size();
-    }
-
-    public void addCity(City city){
 
     }
 
