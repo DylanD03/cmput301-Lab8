@@ -21,6 +21,11 @@ public class CustomListTest {
         return list;
     }
 
+    public City MockCity(){
+        City mockCity = new City("Edmonton", "Alberta");
+        return mockCity;
+    }
+
     /**
      * get the size of the list
      * increase the list by adding a new city
@@ -33,6 +38,21 @@ public class CustomListTest {
         int listSize = list.getCount();
         list.addCity(new City("Estevan", "SK"));
         assertEquals(list.getCount(),listSize + 1);
+    }
+
+
+    // Test has cities
+    @Test
+    public void hasCityTest(){
+        list = MockCityList();
+        City mockCity = MockCity();
+        // test method has cities works
+        assertEquals(false,list.hasCities(mockCity));
+        if (!list.hasCities(mockCity)) {
+            list.addCity(mockCity);
+        }
+        assertEquals(true, list.hasCities(mockCity));
+
     }
 
 
