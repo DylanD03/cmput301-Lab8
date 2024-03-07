@@ -52,6 +52,13 @@ public class CustomList extends ArrayAdapter<City> {
         cities.add(city);
     }
 
+    /**
+     * this deletes a city object from the list
+     * @param city
+     */
+    public void deleteCity(City city){
+    }
+
 
     @NonNull
     @Override
