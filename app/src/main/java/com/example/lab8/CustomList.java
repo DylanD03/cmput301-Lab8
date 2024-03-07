@@ -38,7 +38,8 @@ public class CustomList extends ArrayAdapter<City> {
      * @return True if the list has city, false if not
      */
     public boolean hasCities(City city){
-        return cities.contains(city);
+        //return cities.contains(city);
+        return false;
     }
 
 
@@ -49,7 +50,7 @@ public class CustomList extends ArrayAdapter<City> {
      * @param city
      */
     public void addCity(City city){
-        cities.add(city);
+        //cities.add(city);
     }
 
 
