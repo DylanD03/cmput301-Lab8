@@ -60,6 +60,14 @@ public class CustomList extends ArrayAdapter<City> {
         cities.remove(city);
     }
 
+    /**
+     * this counts number of cities in the list
+     */
+    public int countCities(){
+        //return cities.size();
+        return 0;
+    }
+
 
     @NonNull
     @Override
